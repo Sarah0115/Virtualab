@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}/* Diseño móvil: 480 px e inferior. */
+
+body{
+	background: url(Imagen/Fondo.png);
+	background-size: 100%;
+	}
+link{
+	text-decoration:none;}
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#contenedor {
+	clear: both;
+	margin:10px 0px 10px 0px;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#titulo{
+	margin-bottom:20px;
+	-webkit-box-shadow: 8px 8px 12px 0px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    8px 8px 12px 0px rgba(50, 50, 50, 0.7);
+	box-shadow:         8px 8px 12px 0px rgba(50, 50, 50, 0.7);
+	background-color:#FFF;
+	width:100%;
+	margin: 0px;
+	padding:0px;
+	float:left;
+	}
+#tituele{
+	width: 80%;
+	max-height:160px;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin:0 10% 0 10%;}
+#titlogo{
+	width:50%;
+	float:left;
+}
+#titletra{
+		width:50%;
+	float:left;
+}
+#barra{
+	clear:both;
+	display:block;
+	width:100%;
+	height:20px;
+	background-color: #a7dc4c;
+	position:relative;
+	top:5px;
+	}
+#contenido{
+	clear:both;
+	display:block;
+	margin: 40px 0px 40px 0px;
+	width:100%;
+	}
+#men{
+	float: left;
+	width: 33.3%;
+	text-align:center;
+	color:#FFF;
+	font-size: 16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:bold;
+}
+a:hover{
+	background-color:#fff;
+	color:#003;}
+#dug{
+	float:left;
+	width: 40%;
+}
+#textoact{
+	float:left;
+	width:55%;
+	min-width:400px;
+	height:400px;
+	display:block;
+	background-color:#FFF;
+	-webkit-box-shadow: 8px 8px 12px 0px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    8px 8px 12px 0px rgba(50, 50, 50, 0.7);
+	box-shadow:         8px 8px 12px 0px rgba(50, 50, 50, 0.7);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;	
+	color:#061b3c;
+	text-align:center;
+	padding:10px;
+	}
+#textoact img{
+	min-with:380px;
+	max-width: 400px;}
+#adicional{
+	clear:both;
+	position:relative;
+	margin-top: 50px;
+	margin-bottom:15px;
+	
+	width:100%;
+	height:90px;
+	background-color:#fff;
+}
+#modulos{
+	position: relative;
+	width: 80%;
+	height: 25px;
+	padding: 3px 0 3px 0;
+	margin:5px 10% 5px 10%;
+	background-color: #a7dc4c;
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;	
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:20px;}
+	
+#modulos a:hover{
+	font-style:bold;
+	
+	}
+#footer{
+	background-color:#999;
+}
+	
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (max-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#tituele{
+	width: 90%;
+	max-width: 770px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin:0 3% 0 3%;}
+#titlogo{
+	width:30%;
+	float:left;
+}
+#titletra{
+	width:70%;
+	float:left;
+}
+#dug{
+	float:left;
+	width: 30%;
+}
+#textoact{
+	float:left;
+	width:50%;
+	min-width:400px;
+	padding:10px;
+	}
+}
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (max-width: 500px) {
+.gridContainer {
+	width: 100%;
+	margin-left:0;
+	clear:both;
+	display:block;
+}
+#tituele{
+	width: 100%;
+	margin:0 0 0 0;
+	}
+#titlogo img{
+	width:100%;
+}
+#dug{
+	float:left;
+	width: 100%;
+	margin: 20px 0 20px 0;}
+#textoact{
+	float:left;
+	width:100%;
+	}
+
+}
